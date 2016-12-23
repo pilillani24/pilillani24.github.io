@@ -22,7 +22,8 @@ li a:hover {
     background-color: #DAE1E3;
     color: white;
 }
-#content {
+#content{
+    float: right;
     background-color: lightgrey;
     width: 300px;
     border: 25px solid white;
