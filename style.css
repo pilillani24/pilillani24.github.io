@@ -22,3 +22,10 @@ li a:hover {
     background-color: #DAE1E3;
     color: white;
 }
+div {
+    background-color: lightgrey;
+    width: 300px;
+    border: 25px solid white;
+    padding: 25px;
+    margin: 25px;
+}
