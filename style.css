@@ -1,33 +1,39 @@
-
+/*font-family: 'Stint Ultra Expanded', cursive;
+font-family: 'Mukta Vaani', sans-serif;*/
 body{
-    background-color: black;
-    color: white;
+    background-color: #e5e6e8;
 }
-ul {
-    list-style-type: none;
-    margin: 25px;
-    padding: 25px;
-    width: 200px;
-    background-color: #4D5457;
-    border: 25px solid white;
+.jumbotron {
+    background: url('stargirl_squad.png')no-repeat center center;
+    margin-bottom: 0px;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    font-style: bold;
+}
+#name{
+    color: white;
+    opacity: 100%;
+}
+#name > h1{
+/*    text-shadow: 2px 2px 5px #9da0a5;*/
 }
 
-li a {
-    display: block;
-    color: white;
-    padding: 8px 16px;
-    text-decoration: none;
+.hideContent {
+    overflow: hidden;
+    line-height: 1em;
+    height: 4.8em;
 }
-/* Change the link color on hover */
-li a:hover {
-    background-color: #DAE1E3;
-    color: white;
+
+.showContent {
+    line-height: 1em;
+    height: auto;
 }
-#content{
-    float: right;
-    background-color: lightgrey;
-    width: 300px;
-    border: 25px solid white;
-    padding: 25px;
-    margin: 25px;
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5em;
+}
+.nav a:hover{
+    background-color:white;
 }

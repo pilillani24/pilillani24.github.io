@@ -1,44 +1,100 @@
 <!DOCTYPE html>
-<title>Lorenia A. Jimenez</title>
+<html>
+<head>
 <meta charset="UTF-8">
-<link rel="stylesheet" type="text/css" href="/style.css">
-<style>
-
-</style>
+<title>Lorenia Jimenez</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+<!--   <link href="https://fonts.googleapis.com/css?family=Mukta+Vaani:700|Stint+Ultra+Expanded" rel="stylesheet">
+ -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+</head>
 <body>
-<div id="page">
-  <div id="header">
-    <h1>A website test</h1>
-    <div id="nav">
-      <ul>
-        <li><a href="about">About</a></li>
-        <li><a href="edu">Education</a></li>
-        <li><a href="work">Work</a></li>
-        <li><a href="interest">Interests</a></li>
-        <li><a href="contact">Contact</a></li>
-      </ul>
-    </div>
-  </div>
-  <div id="sidebar">
-  </div>
-  <div id="content">
-    <h2>Demonstrating the Box Model</h2>
 
-<p>The CSS box model is essentially a box that wraps around every HTML element.
-   It consists of: borders, padding, margins, and the actual content.</p>
+<div class="jumbotron text-center">
+  <div id="name">
+  <h1>Lorenia Alejandra Jimenez</h1>
+  <p>Informatics: Human-Computer Interation</p> 
+</div>
+</div>
+<div class="container">
+  <div class="row">
+<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+  <div class="container">
+    <ul>
+      <li class="navbar-text"><a href="https://www.behance.net/loreniaj6d45">About</a></li>
+      <li class="navbar-text">Projects</li>
+      <li class="navbar-text">Gallery</li>
+      <li class="navbar-text">Resume</li>
+      <li class="navbar-text">Contact</li>
+    </ul>
 
-<div>This text is the actual content of the box.
-  We have added a 25px padding, 25px margin and a 25px green border.
-  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-  nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-  reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-  deserunt mollit anim id est laborum.</div>
-    <div id="main_image">
-    </div>
   </div>
-  <div id="footer">
+</nav>
+    <div class="col-sm-4">
+    <div class="text-container">
+      <h3>About</h3>
+      <div class="content hideContent">
+          <p>Bachelor of Science in Informatics with a specialization in Human Computer Interaction from the Donald Bren School of Information & Computer Science at the University of California, Irvine.
+          </p>
+
+          <p>Interested in designing and developing web-based tools that provide organizations with an automated method for processing, accessing and visualizing data. Designing mobile solutions, creation of concepts, wireframes, flowcharts, prototypes, and detailed mockups as well as conduct user testing and document project requirements.
+          </p>
+          <p>My digital art background has helped me deliver creative interface designs and original project team logos for school and internship projects. I love Informatics because I’ve learned how to design better user interfaces by studying and observing how people use information technology. I've also researched how organizations use information technology to support their practices focused on helping users by providing them with efficient innovative interfaces.
+          </p>
+      </div>
+      <div class="show-more">
+          <a href="#">Show more</a>
+      </div>
+    </div>​
+    </div>
+
+    <div class="col-sm-4">
+    <div class="text-container">
+      <h3>Projects</h3>
+      <div class="content hideContent">
+        <ul>
+          <li>Astronics Test Systems WaferNav & ActivATE WaferNav (Senior Design Project)</li>
+          <li>Experian Partner-Tenant Configuration Tool (Project in Software System Design)</li>                       
+          <li>PartyBuddy (HackUCI 2017)</li>
+          <li>adMOD (UCI Data Science Hackathon 2016)</li>
+        </ul>
+      </div>
+      <div class="show-more">
+          <a href="#">Show more</a>
+      </div>
+    </div>​
+
+    </div>
+    <div class="col-sm-4">
+      <h3>Contact</h3>        
+      <a href="mailto:lorenia.jimenez@gmail.com">Lorenia A. Jimenez</a><br> 
+      <p>Orange County, CA</p>
+    </div>
   </div>
 </div>
+<script type="text/javascript">
+  $(".show-more a").on("click", function() {
+      var $this = $(this); 
+      var $content = $this.parent().prev("div.content");
+      var linkText = $this.text().toUpperCase();    
+
+      if(linkText === "SHOW MORE"){
+          linkText = "Show less";
+          $content.switchClass("hideContent", "showContent", 400);
+      } else {
+          linkText = "Show more";
+          $content.switchClass("showContent", "hideContent", 400);
+      };
+
+      $this.text(linkText);
+  });
+</script>
 </body>
+<footer> 
+</footer>
 </html>
